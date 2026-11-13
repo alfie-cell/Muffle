@@ -1,0 +1,20 @@
+/* Muffle for YouTube: cosmetic rules that need :has() or target dialogs.
+   Plain selectors live in tools/extra_rules.txt (content blocker, cheaper). */
+tp-yt-paper-dialog:has(ytd-enforcement-message-view-model),
+ytd-popup-container:has(#feedback.ytd-enforcement-message-view-model),
+ytd-rich-item-renderer:has(ytd-ad-slot-renderer),
+ytd-rich-item-renderer:has(ytd-in-feed-ad-layout-renderer),
+ytd-rich-section-renderer:has(ytd-statement-banner-renderer),
+ytd-reel-video-renderer:has(ytd-ad-slot-renderer),
+ytd-compact-promoted-video-renderer,
+ytd-companion-slot-renderer,
+#masthead-ad,
+.ytp-ad-overlay-container,
+.ytp-ad-text-overlay,
+.ytp-ad-module,
+.ytp-ad-image-overlay,
+.ytp-suggested-action,
+yt-mealbar-promo-renderer,
+ytd-mealbar-promo-renderer {
+  display: none !important;
+}

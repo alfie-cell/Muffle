@@ -1,0 +1,28 @@
+{
+  "profile": "lean",
+  "count": 70412,
+  "block": 69296,
+  "cosmetic": 1,
+  "cosmeticSelectors": 17,
+  "exception": 1115,
+  "generated": "2026-09-21 09:50 UTC",
+  "sources": [
+    "https://easylist.to/easylist/easylist.txt",
+    "https://easylist.to/easylist/easyprivacy.txt"
+  ],
+  "skipped": {
+    "option:generichide": 168,
+    "regex-filter": 31,
+    "option:object": 8,
+    "option:rewrite=abp-resource:blank-mp4": 7,
+    "pipe-in-pattern": 3,
+    "bad-domain": 3,
+    "generic-cosmetic": 2,
+    "option:csp=script-src 'self' data: 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval'": 1,
+    "option:csp=default-src 'self' *.ahcdn.com fonts.gstatic.com fonts.googleapis.com https://thegay.com https://tn.thegay.com 'unsafe-inline' 'unsafe-eval' data: blob:": 1,
+    "option:csp": 1,
+    "option:rewrite=abp-resource:blank-js": 1,
+    "option:csp=child-src 'none'; frame-src 'self' *; worker-src 'none'": 1,
+    "option:csp=child-src 'none'; frame-src *; worker-src 'none'": 1
+  }
+}

@@ -1,0 +1,5 @@
+! YouTube network and cosmetic rules extracted from uBlock Origin's list by tools/build_yt_config.py.
+! Generated file; do not edit. Source: https://ublockorigin.github.io/uAssets/filters/filters.txt
+*_ad_$media,domain=youtube.com,3p
+youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container > .yt-virtual-list__item--visible.yt-virtual-list__item--selected.yt-virtual-list__item:has-text(Ad)
+||googlevideo.com/initplayback?source=youtube&*c=TVHTML5&*oad=$xhr,domain=youtube.com

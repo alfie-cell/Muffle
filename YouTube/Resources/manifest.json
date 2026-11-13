@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Muffle for YouTube",
+  "version": "1.0",
+  "description": "Removes video ads on YouTube. Runs only on YouTube pages.",
+  "permissions": [
+    "scripting",
+    "storage",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.youtube-nocookie.com/*",
+    "*://*.youtubekids.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.youtube-nocookie.com/*",
+        "*://*.youtubekids.com/*"
+      ],
+      "js": [
+        "yt-guard.js"
+      ],
+      "css": [
+        "yt.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "yt-main.js"
+      ],
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.youtube-nocookie.com/*",
+        "*://*.youtubekids.com/*"
+      ]
+    }
+  ]
+}
